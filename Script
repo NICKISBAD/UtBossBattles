@@ -1,7 +1,5 @@
 if game.PlaceId == 2848920787 then
 
-
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local Window = Library.CreateLib("Nick's UT:Boss Battles GUI", "DarkTheme")
@@ -145,5 +143,19 @@ local Section = Tab:NewSection("Options")
 Section:NewKeybind("GUI Toggle", "Toggles the GUI", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)
+
+else 
+
+print("Wrong game detected!") 
+
+game.StarterGui:SetCore("SendNotification", { 
+Title = "Wrong game!";
+Text = "Teleporting you to correct game in 5 seconds."; 
+Duration = 100
+}) 
+
+wait(5) 
+
+game:GetService('TeleportService'):Teleport(2848920787)
 
 end
