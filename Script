@@ -1,4 +1,4 @@
-if game.PlaceId == 2848920787 then
+if game.PlaceId == 2848920787 or 8395973069 then
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
